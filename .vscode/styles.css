@@ -1,0 +1,148 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #c6e2b5;
+  color: #232625;
+  padding:  2rem 1rem;
+  font-family: system-ui, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;/* Allow items to wrap on smaller screens */
+    max-width: 1200px;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto
+}
+
+/*Subscribe section styles*/
+.subscribe-section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+    }
+
+.subscribe-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.subscribe-section input {
+    width: 180px; /*Smaller fixed width*/
+    padding: 0.5rem 0.7rem;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscribe-section button {
+    padding: 0.5rem 1rem;
+    background-color: #e58240;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe-section button:hover {
+    background-color: #c6e2b5;
+}
+
+/* Links section */
+.links-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+.links-section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+}
+
+.links-section a {
+    color: #232625;
+    text-decoration: none;
+}
+
+.links-section a:hover {
+    text-decoration: underline;
+}
+
+/* Contact & Social Section */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+.contact-section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-section a {
+    color: #232625;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.social-icons a {
+  cursor: pointer;
+  transition: transformation 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/*Responsive Layout*/
+@media (min-width: 768px) {
+  .footer-top {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start
+  }
+
+}
+
+  .subscribe-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .subscribe-form input {
+        margin-right: 0.5rem;
+    }  
